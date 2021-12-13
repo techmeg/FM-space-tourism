@@ -139,6 +139,10 @@ button {
     gap: var(--gap, 1rem);
 }
 
+.mb-2 {
+    margin-bottom: 1.5rem;
+}
+
 .display-block {
     display: block;
 }
@@ -149,7 +153,7 @@ button {
 }
 
 .flow--space-small {
-    --flow-space: .5rem;
+    --flow-space: 1rem;
 }
 
 .container {
@@ -693,7 +697,7 @@ body {
 
 .dot-indicators {
     grid-area: dots;
-    /* margin-block: 2rem; */
+    margin-block: 2rem;
 }
 
 .grid-container--crew > .crew-info {
@@ -722,19 +726,19 @@ body {
         align-content: start;
         grid-template-columns: minmax(2rem, 1fr)  minmax(0, 40rem)  minmax(0, 30rem) minmax(2rem, 1fr);
         grid-template-areas:
-        '. title title .'
+        '. title image .'
         '. content image .'
         '. dots image .';
         padding-bottom: 0;
     }
     .grid-container--crew picture {
-        /* justify-self: end; */
+        margin-top: 2rem;
         max-width: 100%;
         align-self: end;
         /* grid-column: span 2; */
     }
     .grid-container--crew .crew-info {
-        margin-block: 5rem;
+        margin-block: max(5rem, 8rem);
     }
     .dot-indicators {
         justify-self: start;
@@ -765,7 +769,6 @@ body {
 
 .number-indicators {
     grid-area: numbers;
-    /* margin-block: 2rem; */
 }
 
 .grid-container--technology > .tech-info {
