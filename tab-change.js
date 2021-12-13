@@ -162,10 +162,13 @@ function changeTab(e) {
     mainContainer
         .querySelectorAll('[role="tabpanel"]')
         .forEach(panel => panel.setAttribute("hidden", true));
-
+    mainContainer
+        .querySelectorAll('[role="tabpanel"]')
+        .forEach(panel => panel.setAttribute("aria-expanded", false));
     // unhide the selected tab panel
     const selectedPanel = mainContainer.querySelector(`#${targetTab.getAttribute("aria-controls")}`)
     selectedPanel.removeAttribute('hidden');
+    selectedPanel.setAttribute("aria-expanded", true);
 
     // To change image
     // get list name & data

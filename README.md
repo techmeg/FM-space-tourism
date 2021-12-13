@@ -15,7 +15,7 @@ I had to implement a different JS strategy to replace the images as I was not ab
 ### Links
 
 - Solution URL: [github.com/techmeg/FM-space-tourism](https://github.com/techmeg/FM-space-tourism)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [techmeg.github.io/FM-space-tourism](https://techmeg.github.io/FM-space-tourism/)
 
 ### Built with
 

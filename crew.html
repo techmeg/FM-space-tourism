@@ -14,8 +14,7 @@
     <title>Frontend Mentor | Space tourism website</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="index.css"   
-        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
     <script src='./nav.js' defer></script>
     <script src='./tab-change.js' defer></script>
 
@@ -31,7 +30,7 @@
       <div class="line"></div>
       <nav >
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex underline-indicators">
-            <li  ><a class="uppercase letter-spacing-2  text-white" href="index.html"><span>00</span aria-hidden="true"> Home</a></li>
+            <li  ><a class="uppercase letter-spacing-2  text-white" href="index.html"><span aria-hidden="true">00</span> Home</a></li>
             <li ><a class="uppercase letter-spacing-2  text-white" href="destination.html"><span aria-hidden="true">01</span> Destination</a></li>
             <li class=" active"><a class="uppercase letter-spacing-2  text-white" href="crew.html"><span aria-hidden="true">02</span> Crew</a></li>
             <li ><a class="uppercase letter-spacing-2  text-white" href="technology.html"><span aria-hidden="true">03</span> Technology</a></li>
@@ -49,7 +48,7 @@
         <button aria-selected="false" role="tab" aria-controls="engineer-tab" tabindex="-1" data-image="ansari-tab" data-index="3"><span class="sr-only">The crew engineer</span></button>
       </div>
 
-      <article role="tabpanel" class="flow crew-info" id="commander-tab" tabindex="0">
+      <article role="tabpanel" aria-expanded="true" class="flow crew-info" id="commander-tab" tabindex="0">
         <header class=" flow flow--space-small">
           <h2 class="fs-600 ff-serif uppercase">Commander</h2>
           <p class="fs-700 ff-serif uppercase">Douglas Hurley</p>
@@ -59,7 +58,7 @@
           commander of Crew Dragon Demo-2.</p>
       </article>
 
-      <article role="tabpanel" class="flow crew-info" id="specialist-tab" tabindex="0" hidden>
+      <article role="tabpanel" aria-expanded="false" class="flow crew-info" id="specialist-tab" tabindex="0" hidden>
         <header class=" flow flow--space-small">
           <h2 class="fs-600 ff-serif uppercase">Mission Specialist</h2>
           <p class="fs-700 ff-serif uppercase">Mark Shuttleworth</p>
@@ -69,7 +68,7 @@
           African to travel to space as a space tourist.</p>
       </article>
 
-      <article role="tabpanel" class="flow crew-info" id="pilot-tab" tabindex="0" hidden>
+      <article role="tabpanel" aria-expanded="false" class="flow crew-info" id="pilot-tab" tabindex="0" hidden>
         <header class=" flow flow--space-small">
           <h2 class="fs-600 ff-serif uppercase">Pilot</h2>
           <p class="fs-700 ff-serif uppercase">Victor Glover</p>
@@ -80,7 +79,7 @@
           station systems flight engineer.</p>
       </article>
 
-      <article role="tabpanel" class="flow crew-info" id="engineer-tab" tabindex="0" hidden>
+      <article role="tabpanel" aria-expanded="false" class="flow crew-info" id="engineer-tab" tabindex="0" hidden>
         <header class=" flow flow--space-small">
           <h2 class="fs-600 ff-serif uppercase">Flight Engineer</h2>
           <p class="fs-700 ff-serif uppercase">Anousheh Ansari</p>
